@@ -56,8 +56,8 @@ class ControllerExtensionModuleAccessible extends Controller {
 	public function install() {
 		// now add triggers
 		$this->load->model('setting/event');
-		$this->model_setting_event->addEvent('accessible','catalog/view/common/header/before','event/accessible/language');
-		//$this->model_setting_event->addEvent('accessible','catalog/view/common/header/after','event/accessible/view');
+		$this->model_setting_event->addEvent('accessible','catalog/view/common/header/before','extension/event/accessible/language');
+		//$this->model_setting_event->addEvent('accessible','catalog/view/common/header/after','extension/event/accessible/view');
 	}
 
 	public function uninstall() {
